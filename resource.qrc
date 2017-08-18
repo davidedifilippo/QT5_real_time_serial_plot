@@ -1,7 +1,12 @@
 <RCC>
-    <qresource prefix="/Ico">
+    <qresource prefix="/">
         <file>Icons/exe_icon.ico</file>
         <file>Icons/serial_port_icon.icns</file>
         <file>StyleSheet/style.qss</file>
+        <file>images/application-exit.png</file>
+        <file>images/clear.png</file>
+        <file>images/connect.png</file>
+        <file>images/disconnect.png</file>
+        <file>images/settings.png</file>
     </qresource>
 </RCC>

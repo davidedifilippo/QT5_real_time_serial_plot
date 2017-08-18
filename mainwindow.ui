@@ -38,9 +38,9 @@
     <property name="title">
      <string>Menu</string>
     </property>
-    <addaction name="actionConfigure"/>
     <addaction name="actionConnect"/>
     <addaction name="actionDisconnect"/>
+    <addaction name="actionConfigure"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
@@ -54,24 +54,43 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionConnect"/>
+   <addaction name="actionDisconnect"/>
+   <addaction name="actionConfigure"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionDisconnect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/disconnect.png</normaloff>:/images/disconnect.png</iconset>
+   </property>
    <property name="text">
     <string>Disconnect</string>
    </property>
   </action>
   <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/connect.png</normaloff>:/images/connect.png</iconset>
+   </property>
    <property name="text">
     <string>Connect</string>
    </property>
   </action>
   <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/application-exit.png</normaloff>:/images/application-exit.png</iconset>
+   </property>
    <property name="text">
     <string>Quit</string>
    </property>
   </action>
   <action name="actionConfigure">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/settings.png</normaloff>:/images/settings.png</iconset>
+   </property>
    <property name="text">
     <string>Configure</string>
    </property>
@@ -86,6 +105,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
